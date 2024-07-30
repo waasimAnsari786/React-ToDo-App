@@ -6,6 +6,12 @@
   font-family: var(--my-font);
 }
 
+@media (max-width:576px) {
+  .main-div{
+    width: 30rem;
+  }
+}
+
 html body{
   background-color: #040723;
 }

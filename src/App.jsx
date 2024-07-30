@@ -94,9 +94,9 @@ function App() {
 
   return (
     <>
-      <div className="container d-flex justify-content-center align-items-md-center flex-column">
+      <div className="container d-flex justify-content-center align-items-center flex-column">
         <h1 className="text-light main-head">add your list here ✌️</h1>
-        <div className="col-6 d-flex justify-content-center align-items-center flex-column main-div p-5">
+        <div className="col-xxl-4 col-xl-5 col-lg-6 col-md-7 col-sm-10 d-flex justify-content-center align-items-center flex-column main-div p-5">
           <div className="col-12 search-bar mb-5">
             <div className="row">
               <div className="col-11">
