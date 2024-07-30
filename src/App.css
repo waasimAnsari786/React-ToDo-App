@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+:root{
+  --my-font : "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  font-family: var(--my-font);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html body{
+  background-color: #040723;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-div{
+  box-shadow: inset .3rem .6rem 1.5rem white;
+  border-radius: 1rem;
+}
+
+.main-head{
+  text-transform: capitalize;
+}
+
+.search-bar{
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+input , .add-btn{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #040723;
+}
+input::placeholder{
+  text-transform: capitalize;
+  color: #040723;
+}
+
+.fa-plus{
+  font-size: 1.1rem;
+  color: #040723;
+}
+
+.rough{
+  border: .1rem solid black;
+}
+
+.fa-trash , .fa-pen-to-square{
+  color: #ffffff;
+  margin: 0 .1rem;
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+
+.task-ctnr{
+  border-radius: 1rem;
+  background-color: #5635DF;
   color: white;
+  transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.rem-tasks-btn{
+  background-color: #5635DF;
+  border: none;
+  border-radius: .8rem;
+  padding: .8rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-ctnr:hover , .rem-tasks-btn:hover{
+  background-color: white;
+  color: #5635DF;
 }
+
+.task-ctnr:hover .fa-trash{
+  color: #e43131;
+}
+
+.task-ctnr:hover .fa-pen-to-square{
+  color: #17be1f;
+}
+/*  , { */
