@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types';
+import '../App.css'
 
 export default function Tasks(props) {
   return (
@@ -43,3 +45,11 @@ export default function Tasks(props) {
     </>
   );
 }
+
+Tasks.propTypes = {
+  task: PropTypes.string.isRequired,
+  remAniFunc: PropTypes.func.isRequired,
+  addAniFunc: PropTypes.func.isRequired,
+  editTasksFunc: PropTypes.func.isRequired,
+  delTasksFunc: PropTypes.func.isRequired,
+};
